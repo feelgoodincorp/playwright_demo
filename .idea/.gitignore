@@ -6,3 +6,9 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+../.env
+../package-lock.json
+../node_modules
+../playwright-report
+../test-results

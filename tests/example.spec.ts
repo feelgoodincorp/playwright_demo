@@ -1,5 +1,7 @@
 import { test, expect } from '@playwright/test';
 
+// npx playwright test --headed
+
 // test('has title', async ({ page }) => {
 //     await page.goto('https://playwright.dev/');
 //
@@ -20,4 +22,7 @@ import { test, expect } from '@playwright/test';
 test('test 1', async ({ page }) => {
     await page.goto('https://google.com')
     await expect(page).toHaveTitle('Google')
+
+    const env = process.env.NODE_ENV;
+    console.log(env)
 });
