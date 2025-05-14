@@ -14,7 +14,7 @@ export const getAuthApiContext = async({ user, authToken }: APIAuth): Promise<AP
 
     if(user && !authToken) {
         const authClient = await getAuthAPIClient()
-        const token = await authClient.getAuthToken()
+        const token = await authClient.getAuthToken(user)
 
         extraHttpHeaders = {...extraHttpHeaders, Authorization: `Token ${token}` }
     }
