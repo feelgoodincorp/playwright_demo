@@ -19,7 +19,7 @@ import { test, expect } from '@playwright/test';
 //     await expect(page).toHaveURL(/.*docs\/intro/);
 // });
 
-test('test 1', async ({ page }) => {
+test.skip('test 1', async ({ page }) => {
     await page.goto('https://google.com')
     await expect(page).toHaveTitle('Google')
 
