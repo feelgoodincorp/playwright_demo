@@ -14,6 +14,9 @@ export default defineConfig({
     globalTeardown: require.resolve('./utils/config/global-teardown'),
     use: {
         trace: 'on-first-retry',
+        baseURL: 'https://playwright.dev',
+        actionTimeout: 10000,
+        navigationTimeout: 15000,
     },
     projects: [
         // {
